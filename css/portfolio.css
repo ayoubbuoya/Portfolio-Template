@@ -1,0 +1,219 @@
+/*  Start Global Rules */ 
+* {
+  box-sizing: border-box;
+}
+html { 
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  background-color: white;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+/*  END Global Rules */
+/* Start Header Section */
+section:first-of-type {
+  background-color: #1c1d25;
+  height: 100vh;
+  color: white;
+  font-size: 40px;
+}
+/* Start Nav */
+section:first-of-type nav {
+  display: flex;
+  justify-content: space-between;
+}
+section:first-of-type nav img {
+  height: 80px;
+  margin: 10px;
+}
+section:first-of-type nav ul {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-around;
+  font-size: 30px;
+}
+section:first-of-type nav .hamburger {
+  display: none;
+}
+section:first-of-type nav .hamburger:focus {
+  outline: 0;
+}
+@media (max-width: 1000px ) {
+  section:first-of-type nav .hamburger {
+    display: block;
+    cursor: pointer;
+    border: 0;
+    background-color: #1c1d25;
+    color: transparent;
+    font-size: 30px;
+    margin: 20px;
+  }
+  section:first-of-type nav {
+    align-items: flex-start;
+  }
+  section:first-of-type nav ul {
+    display: none;
+  }
+
+}
+
+section:first-of-type nav ul.show {
+  display: block;
+
+}
+section:first-of-type nav ul li {
+  text-decoration: none;
+}
+/* End Nav */
+section:first-of-type .head-area {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+section:first-of-type .head-area .head-text {
+  margin-left: 80px;
+  margin-bottom: 200px;
+}
+section:first-of-type .head-area.head-text h1 {
+  font-size: 90px;
+  margin: 0;
+}
+section:first-of-type .head-area.head-text p {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 300;
+}
+section:first-of-type .head-area .head-text .button {
+  width: 200px;
+  height: 55px;
+  border-radius: 30px;
+  background-color: coral;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  padding-top: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+section:first-of-type .head-area .head-text .button:hover {
+    background-color: #ef744b;
+}
+section:first-of-type .head-area .head-text .button:active {
+    background-color: #a9a9a9;
+    color: #808080; 
+}
+section:first-of-type .head-area .socials {
+    padding-bottom: 200px;
+}
+section:first-of-type .head-area .socials .social {
+  margin: 20px;
+}
+/* End Header Section */
+/* Start About Section */ 
+section:nth-of-type(2) {
+  display: flex;
+  justify-content: space-around;
+  padding: 80px;
+}
+section:nth-of-type(2) .information h2  {
+  font-size: 50px;
+  font-weight: 800;
+}
+section:nth-of-type(2) .information p{
+  font-weight: 300;
+  font-size: 20px;
+}
+section:nth-of-type(2) .headshot-container {
+  display: flex;
+  align-items: center;
+}
+section:nth-of-type(2) .headshot-container img {
+  width: 300px;
+  border-radius: 150px;
+}
+/* End About Section */ 
+/* Start Projects Section  */ 
+section:nth-of-type(3) {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px;
+}
+section:nth-of-type(3) .project-container {
+  display: flex; 
+  justify-content: space-around;
+}
+@media ( max-width: 1000px ) {
+  section:nth-of-type(3) .project-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+}
+section:nth-of-type(3) .project-container .project-card {
+  width: 300px;
+  height: 500px;
+  box-shadow: 5px 5px 20px rgb(196, 193, 193);
+  margin: 10px;
+}
+section:nth-of-type(3) .project-container .project-card img {
+  margin-top: 25px;
+  width: 250px;
+  border-radius: 125px;
+}
+section:nth-of-type(3) .project-container .project-card hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+section:nth-of-type(3) .project-container .project-card p {
+  font-size: 16px;
+  font-weight: 300;
+}
+section:nth-of-type(3) .project-container .project-card p:last-child {
+  cursor: pointer;
+}
+section:nth-of-type(3) .project-container .project-card p:last-child a {
+  color: #ef744b;
+}
+/* End Projects Section  */ 
+/* Start Footer */ 
+footer {
+  padding: 80px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+footer h2 {
+  font-size: 50px;
+}
+footer a {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 300;
+}
+/* End Footer */ 
+.hamburger {
+  display: none;
+}
+@media (max-width: 1000px ) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    border: 0;
+    background-color: #1c1d25;
+    color: transparent;
+    font-size: 30px;
+  }
+  section:first-of-type nav ul {
+    display: none;
+  }
+}
